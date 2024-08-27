@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    background-color: #1b1d20; /* Darker background color */
+    background-color: #1b1d20;
     padding: 30px;
     margin: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
@@ -37,8 +37,17 @@ body{
 .login_form label{
     color: white;
     padding: 10px;
-    text-align: center;
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+    margin-bottom: 10px;
     font-size: 18px;
+}
+
+.login_form input{
+    display: inline-block;
+    width: 143px;
+    height: 11px;
 }
 
 .login_form button {
@@ -54,3 +63,24 @@ body{
 .login_form button:hover {
     background-color: #3e8e41; /* Darker green color on hover */
 }
+
+input{
+    border: none;
+    border-radius: 3px;
+    margin: 8px;
+    height: 20px;
+    padding:12px;
+    background-color: #111315;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #fff;
+}
+
+input:focus{
+    outline: none;
+    border-color: #d80e0e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    caret-color: #ccc;
+    color: #fff;
+}
+
