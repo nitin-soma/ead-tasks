@@ -15,16 +15,16 @@ function renderBoard() {
     html += "<div class='row'>";
     for (let j = 0; j < 8; j++) {
       let squareClass = (i + j) % 2 === 0 ? "white" : "black";
-      let piece = board[i][j];
+      // let piece = board[i][j];
       let pieceImg = "";
 
-      if (piece) {
-        let color = piece[0] === piece[0].toUpperCase() ? "white" : "black";
-        let pieceType = piece.toLowerCase();
+      // if (piece) {
+      //   let color = piece[0] === piece[0].toUpperCase() ? "white" : "black";
+      //   let pieceType = piece.toLowerCase();
 
-        let pieceUrl = getPieceUrl(color, pieceType);
-        pieceImg = `<img src="${pieceUrl}" alt="${piece}" width="50px" height="50px">`;
-      }
+      //   let pieceUrl = getPieceUrl(color, pieceType);
+      //   pieceImg = `<img src="${pieceUrl}" alt="${piece}" width="50px" height="50px">`;
+      // }
 
       html += `<div class='square ${squareClass}' id='square-${i}-${j}' onClick='handleClick(${i},${j})'>${pieceImg}</div>`;
     }
@@ -92,5 +92,5 @@ function handleClick(i, j) {
   renderBoard();
 }
 
-initBoard();
+// initBoard();
 renderBoard();

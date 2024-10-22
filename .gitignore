@@ -1,0 +1,4 @@
+*.pdf
+/jwt/node_modules
+*.png
+.env
